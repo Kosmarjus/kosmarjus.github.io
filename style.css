@@ -1,5 +1,18 @@
-div {
+
+body, html {
+    height: 100%;
     width: 100%;
+margin:0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100%;
+}
+
+#testing {
+    width: 10%;
     height: 100px;
     background-color: gray;
     text-align: center;
@@ -8,7 +21,7 @@ div {
     transition: all 1000ms linear;
 }
 
-div:hover {
+#testing:hover {
     background-color: red;
     transition: all 1000ms linear;
 }

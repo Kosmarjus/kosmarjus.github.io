@@ -6,6 +6,7 @@ a.onmouseup = mouseup;
 
 
 
+
 function mouseout() {
     let writing = document.getElementById("testing");
     writing.innerHTML = 'whaaaaat';
@@ -19,11 +20,16 @@ function mouseover() {
 function mousedown() {
     let writing = document.getElementById("testing");
     writing.innerHTML = 'NOOOOOOO';
+    writing.style.backgroundColor = "Yellow";
+    writing.style.alignSelf = "flex-end";
 }
 
 function mouseup() {
     let writing = document.getElementById("testing");
     writing.innerHTML = 'YSSSSSSSSSSS';
     setTimeout(mouseout, 1500);
+    writing.style.backgroundColor = "";
+    writing.style.alignSelf = "";
+    
 
 }
