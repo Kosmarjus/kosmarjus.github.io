@@ -1,27 +1,32 @@
-
-body, html {
+html,
+body {
     height: 100%;
-    width: 100%;
-margin:0;
 }
 
 .container {
     display: flex;
-    flex-direction: column-reverse;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
-#testing {
-    width: 10%;
-    height: 100px;
-    background-color: gray;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 100px;
-    transition: all 1000ms linear;
+.form {
+    background-color: beige;
+    padding: 20px;
+    box-shadow: 10px 10px 8px #888888;
 }
 
-#testing:hover {
-    background-color: red;
-    transition: all 1000ms linear;
+.form span {
+    font-weight: bold;
+}
+
+
+/* tarpas po dropdown meniu */
+#pasirinkimas {
+    margin-bottom: 20px;
+}
+
+/* default reiksme */
+#textOutput {
+    opacity: 0;
 }

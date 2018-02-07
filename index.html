@@ -5,18 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Protrama</title>
 </head>
 
 <body>
     <div class="container">
+        <div class="form">
 
-        <div id="testing">
-            Hello</div>
+            <select name="pasirinkimas" id="pasirinkimas">
+                <option value="">-Pasirinkite šalį-</option>
+                <option value="ltu">Lietuva</option>
+                <option value="ind">Indija</option>
+                <option value="chn">Kinija</option>
+                <option value="usa">Jungtinės Amerikos Valstijos</option>
+            </select>
+            <div id="textOutput">
+                <p>Šalis:
+                    <span id="salis"></span>, joje gyvena
+                    <span id="gyventojai"></span> mln. gyventojų.</p>
+
+
+                <p>Valstybės plotas:
+                    <span id="plotas"></span> km², plotas tenkantis vienam gyventojui:
+                    <span id="plotasGyventojui"></span> m².</p>
+            </div>
+
+        </div>
 
 
     </div>
+
     <script src="script.js"></script>
 </body>
 
