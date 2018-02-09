@@ -5,40 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <title>Document</title>
+
     <link rel="stylesheet" href="style.css">
-    <title>Protrama</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="form">
-
-            <select name="pasirinkimas" id="pasirinkimas">
-                <option value="">-Pasirinkite šalį-</option>
-                <option value="ltu">Lietuva</option>
-                <option value="ind">Indija</option>
-                <option value="chn">Kinija</option>
-                <option value="usa">Jungtinės Amerikos Valstijos</option>
-            </select>
-            <div id="textOutput">
-                <p>Šalis:
-                    <span id="salis"></span>, joje gyvena
-                    <span id="gyventojai"></span> mln. gyventojų.</p>
-
-
-                <p>Valstybės plotas:
-                    <span id="plotas"></span> km², plotas tenkantis vienam gyventojui:
-                    <span id="plotasGyventojui"></span> m².</p>
+    <div class="calculator">
+        <div class="inner-wrapper">
+            <div class="screen">
+                <output class="output"></output>
             </div>
-
+            <div id="btns-wrapper">
+                <div class="row">
+                    <button class="c">C</button>
+                    <button class="backspace">⌫</button>
+                    <button class="divide">/</button>
+                </div>
+                <div class="row">
+                    <button class="seven">7</button>
+                    <button class="eight">8</button>
+                    <button class="nine">9</button>
+                    <button class="multiply">x</button>
+                </div>
+                <div class="row">
+                    <button class="four">4</button>
+                    <button class="five">5</button>
+                    <button class="six">6</button>
+                    <button class="minus">-</button>
+                </div>
+                <div class="row">
+                    <button class="one">1</button>
+                    <button class="two">2</button>
+                    <button class="three">3</button>
+                    <button class="plus">+</button>
+                </div>
+                <div class="row">
+                    <button class="neg" data-neg="negative-positive">±</button>
+                    <button class="zero">0</button>
+                    <button class="dot">.</button>
+                    <button class="equal">=</button>
+                </div>
+            </div>
         </div>
-
-
     </div>
-
-    <script src="script.js"></script>
+    <script src="calculator-app.js"></script>
 </body>
 
 </html>
