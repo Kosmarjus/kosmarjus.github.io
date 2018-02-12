@@ -82,3 +82,19 @@ button:hover {
     border-left-color: #ccc;
     background: #ccc;
 }
+
+.leftpar,
+.rightpar {
+    width: 35px;
+    margin: 0;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.leftpar {
+    margin-left: 10px;
+}
+
+.rightpar {
+    margin-left: 5px;
+}

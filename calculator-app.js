@@ -26,7 +26,10 @@ let oneBtn = document.querySelector(".one"),
     multiplyBtn = document.querySelector(".multiply"),
     divideBtn = document.querySelector(".divide"),
     equalBtn = document.querySelector(".equal"),
-    backspaceBtn = document.querySelector(".backspace");
+    backspaceBtn = document.querySelector(".backspace"),
+    leftparBtn = document.querySelector(".leftpar"),
+    rightparBtn = document.querySelector(".rightpar");
+
 
 // Registruojam mygtukų paspaudimus
 
@@ -112,6 +115,20 @@ equalBtn.addEventListener("click", function () {
 backspaceBtn.addEventListener("click", function () {
     backspaceResult();
 });
+
+
+//leftpar
+leftparBtn.addEventListener("click", function () {
+    leftparResult('(');
+});
+
+
+//rightpar
+rightparBtn.addEventListener("click", function () {
+    rightparResult(')');
+});
+
+
 
 // Su šia funkcija pridedame simbolius (skaičiai, matematiniai operatoriai) į result
 // Taip pat rezult kintamąjį atvaizduojame ekrane
@@ -218,7 +235,7 @@ function dotResult(dot) {
 
 //operatoriu funkcija
 function operatorResult(textToAdd) {
-    equalClear = false; //grazinam flag'o pradine busena kad +- keitimas neistrintu rezultato
+     //grazinam flag'o pradine busena kad +- keitimas neistrintu rezultato
     let checker = result.charAt(result.length - 1);
 
     if (checker == "*" || checker == "/" || checker == "+" || checker == "-") { //jeigu paskutinis irasytas simbolis buvo vienas is operatoriu - keiciam ta operatoriu
@@ -266,5 +283,24 @@ function equalResult() {
 //backspace paskutinio simbolio isvalymo f-ja
 function backspaceResult() {
     result = result.slice(0, -1);
+    outputEl.innerText = result;
+}
+
+
+
+
+//leftpar must be next to an operator or null to enter
+function leftparResult(par) {
+
+
+    result = result+par
+    outputEl.innerText = result;
+}
+
+
+
+//rightpar must not exceed the quantitty of leftpars, + should auto close by counting leftpars (maybe into equal)
+function rightparResult(par) {
+    result = result+par
     outputEl.innerText = result;
 }
