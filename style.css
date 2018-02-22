@@ -68,7 +68,7 @@ header {
 	align-content: flex-start;
 }
 
-.main>* {
+.main > * {
 	background-color: white;
 	margin: 3px;
 	padding: 5px;
@@ -77,7 +77,7 @@ header {
 	color: black;
 }
 
-.main>*:hover {
+.main > *:hover {
 	text-decoration: none;
 	color: black;
 	margin-top: -1px;
