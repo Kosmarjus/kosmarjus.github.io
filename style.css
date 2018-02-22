@@ -68,7 +68,6 @@ header {
 	align-content: flex-start;
 }
 
-<<<<<<< HEAD
 .main>* {
 	background-color: white;
 	margin: 3px;
@@ -110,26 +109,4 @@ header {
 #deleteButton {
 	visibility: hidden;
 	margin-right: auto;
-=======
-button:hover {
-    border-top-color: #ccc;
-    border-left-color: #ccc;
-    background: #ccc;
-}
-
-.leftpar,
-.rightpar {
-    width: 35px;
-    margin: 0;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-
-.leftpar {
-    margin-left: 10px;
-}
-
-.rightpar {
-    margin-left: 5px;
->>>>>>> a0c60dd42d151499c330c299562e8e45dc8fca30
 }
