@@ -72,8 +72,8 @@ header {
 	background-color: white;
 	margin: 3px;
 	padding: 5px;
+	height: 344px;
 	box-shadow: 5px 5px 4px #888888;
-	height: 200px;
 	color: black;
 }
 
@@ -109,4 +109,8 @@ header {
 #deleteButton {
 	visibility: hidden;
 	margin-right: auto;
+}
+
+#showimage {
+	visibility: hidden;
 }
