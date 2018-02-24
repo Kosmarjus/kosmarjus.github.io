@@ -14,7 +14,14 @@ function storeInput() {
     let inputName = document.getElementById('input').value;
     let inputProperty1 = document.getElementById('property1').value;
     let inputProperty2 = document.getElementById('property2').value;
-    let img = document.getElementById('img').files[0].name;
+    let imgLocation = '';
+
+    if (document.getElementById('img').value == "") {
+
+         imgLocation = 'default.png';
+    } else {
+         imgLocation = document.getElementById('img').files[0].name
+    }
 
     var result = dataArray.filter(function (obj) { //f-ja objekto atrinkimui pagal dabartini ID
         return obj.id == targetID;
@@ -26,7 +33,7 @@ function storeInput() {
             name: inputName,
             property1: inputProperty1,
             property2: inputProperty2,
-            image: 'images/'+img
+            image: 'images/' + imgLocation
         });
 
     } else { //jei yra irasas - atnaujinam seno iraso propercius
@@ -34,7 +41,7 @@ function storeInput() {
         result.name = inputName;
         result.property1 = inputProperty1;
         result.property2 = inputProperty2;
-        result.image = 'images/'+img;
+        result.image = 'images/' + imgLocation;
     }
 
     localStorage.setItem('dataArray', JSON.stringify(dataArray)); //stumiam i localstorage
