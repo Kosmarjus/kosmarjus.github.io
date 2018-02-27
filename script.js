@@ -28,10 +28,10 @@ function createNewEntry() {
         },
         body: JSON.stringify(newEntry)
     }).then(function (data) {
-        console.log("Įrašas sukurtas sekmingai");
+        console.log("įrašas sukurtas sekmingai");
         loadServerData();
     }).catch(function (error) {
-        console.log("Įrašo nepavyko išsaugoti", error);
+        console.log("įrašo nepavyko išsaugoti", error);
     });
     clearInputs(); //išvalom laukus
     $('#promptModal').modal('hide'); //ir paslepiap modalini langa 
@@ -123,11 +123,11 @@ function updateEntry() {
         },
         body: JSON.stringify(newEntry)
     }).then(function (data) {
-        console.log("Atnaujinta sekmingai");
+        console.log("atnaujinta sekmingai");
         loadServerData();
         clearInputs();
     }).catch(function (error) {
-        console.log("nepavyko Atnaujinti", error);
+        console.log("nepavyko atnaujinti", error);
     });
     $('#promptModal').modal('hide'); //slepiam modalini po paspaudimo
     document.getElementById('saveButton').removeEventListener('click', updateEntry); //po pakeitimo pasaliname event listeneri
