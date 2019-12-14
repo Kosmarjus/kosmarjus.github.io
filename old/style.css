@@ -1,0 +1,159 @@
+html,
+body {
+	margin: 0;
+	min-height: 100vh;
+}
+
+/* overflow to fix vertical scrollbar appearing */
+
+.container {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.container>* {
+	flex: 1 100%;
+}
+
+header {
+	height: 100px;
+	background: url('https://i.ytimg.com/vi/gxmHOwWh-i4/maxresdefault.jpg')74% 54% no-repeat;
+	background-size: 21% auto;
+}
+
+.navbar {
+	background-color: bisque;
+	display: flex;
+	justify-content: flex-start;
+}
+
+#searchInput {
+	margin-right: 10px;
+}
+
+#creatorButton {
+	margin-left: auto;
+}
+
+@media all and (min-width: 600px) {
+	.aside {
+		flex: 1 auto;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.main {
+		flex: 8 0px;
+	}
+	.aside1 {
+		order: 1;
+	}
+	.main {
+		order: 2;
+	}
+	.aside2 {
+		order: 3;
+	}
+	.footer {
+		order: 4;
+	}
+}
+
+.aside {
+	background-color: lightslategrey;
+}
+
+.main {
+	min-height: calc(100vh - 204px);
+	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	align-items: flex-start;
+}
+
+.main ul {
+	padding: 0;
+}
+
+.main ul li {
+	list-style: none;
+}
+
+.main img {
+	height: 100px;
+}
+
+.footer {
+	height: 50px;
+	background-color: beige;
+}
+
+.table tr td {
+	width: 100%;
+}
+
+#deleteButton {
+	visibility: hidden;
+	margin-right: auto;
+}
+
+#searchOnYouTube {
+	visibility: hidden;
+}
+
+#showimage {
+	visibility: hidden;
+	height: 256px;
+}
+
+.fa-youtube {
+	opacity: 0.3;
+	color: #cc181e
+}
+
+#searchOnYouTube:hover .fa-youtube {
+	opacity: 1;
+}
+
+.youtubeContainer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cardContainer {
+	justify-content: center;
+	margin: 3px;
+	padding: 5px;
+	box-shadow: 5px 5px 4px #888888;
+	color: black;
+	background-color: white;
+	text-decoration: none;
+}
+
+.cardContainer:hover {
+	margin-top: -1px;
+}
+
+.cardContainer:focus {
+	margin-top: -1px;
+}
+
+.cardContainer a {
+	color: black;
+}
+
+.cardContainer a:hover {
+	text-decoration: none;
+	color: black;
+}
+
+.cardContainer a:focus {
+	text-decoration: none;
+	color: black;
+}
+
+.imageContainer img {
+	display: block;
+	margin: auto;
+}
